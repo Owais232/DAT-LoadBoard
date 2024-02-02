@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin_Activity"
+    android:background="@color/white"
+    android:backgroundTint="@color/white"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo"
+            android:padding="2dp"
+            android:layout_margin="10dp"></ImageView>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:gravity="center"
+
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="  Add New Load   "
+            android:textSize="20dp"
+            android:id="@+id/addload"
+            android:backgroundTint="@color/material_dynamic_neutral70"
+
+            android:layout_marginBottom="30dp"
+            >
+        </Button>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Delete/Update Load"
+            android:textSize="20dp"
+            android:id="@+id/deleteload"
+            android:backgroundTint="@color/material_dynamic_neutral70"
+
+            android:layout_marginBottom="30dp"
+
+            >
+        </Button>
+
+
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Powered By DAT Freight and Analytics @2024"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="@color/black">
+
+        </TextView>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#E7ECEF">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="100dp"
+                android:src="@drawable/logo"
+                android:padding="2dp"
+                android:layout_margin="10dp"></ImageView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+                <Button
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:backgroundTint="@color/white"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:hint="Sign Up"
+                    android:id="@+id/btnsignup">
+
+                </Button>
+                <Button
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="20dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:backgroundTint="@color/white"
+                    android:hint="Sign In"
+                    android:id="@+id/btnsignin">
+
+                </Button>
+
+            </LinearLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:orientation="vertical"
+                android:id="@+id/container">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:id="@+id/signupForm"
+                    android:visibility="visible"
+                    >
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="320dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="16dp"
+                        app:cardCornerRadius="20dp"
+                        android:background="@color/white"
+                        app:cardElevation="10dp"
+                        app:contentPadding="20dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="First name"
+                                        android:textSize="25dp"
+                                        android:id="@+id/rfname"/>
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Last name"
+                                        android:textSize="25dp"
+                                        android:id="@+id/rlname"/>
+                                </com.google.android.material.textfield.TextInputLayout>
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Email address"
+                                        android:id="@+id/remail"
+                                        android:textSize="20dp"
+                                        />
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Password here"
+                                        android:id="@+id/rpass"
+                                        android:inputType="textPassword"
+                                        android:textSize="20dp"/>
+                                </com.google.android.material.textfield.TextInputLayout>
+
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="20dp"
+                                android:gravity="center">
+                                <Button
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:hint="Submit"
+                                    android:textSize="25dp"
+                                    android:id="@+id/rsubmit"
+                                    android:backgroundTint="@color/white"
+                                    >
+
+                                </Button>
+                                <Button
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:hint="Clear"
+                                    android:textSize="25dp"
+                                    android:backgroundTint="@color/white">
+
+                                </Button>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/signinform"
+                    android:visibility="gone"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="320dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="16dp"
+                        app:cardCornerRadius="20dp"
+                        android:background="@color/white"
+                        app:cardElevation="10dp"
+                        app:contentPadding="20dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Email address"
+                                        android:textSize="20dp"
+                                        android:id="@+id/lemail"
+                                        android:textColor="@color/black"/>
+
+
+                                </com.google.android.material.textfield.TextInputLayout>
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Password here"
+                                        android:inputType="textPassword"
+                                        android:id="@+id/lpass"
+                                        android:textSize="20dp"/>
+
+
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="20dp"
+                                android:gravity="center">
+                                <Button
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:hint="Login"
+                                    android:textSize="25dp"
+                                    android:id="@+id/llogin"
+                                    android:textColor="@color/black"
+                                    android:backgroundTint="@color/white"
+                                    >
+
+                                </Button>
+                                <Button
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:hint="Clear"
+                                    android:textSize="25dp"
+                                    android:id="@+id/lclear"
+                                    android:textColor="@color/black"
+                                    android:backgroundTint="@color/white">
+
+                                </Button>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+
+            </FrameLayout>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Powered By DAT Freight and Analytics @2024"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/black">
+
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

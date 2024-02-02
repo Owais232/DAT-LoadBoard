@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "822421403957",
+    "project_id": "dat-c04bb",
+    "storage_bucket": "dat-c04bb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:822421403957:android:ca1572ba3cf9ae352a747c",
+        "android_client_info": {
+          "package_name": "com.example.dat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCX1XjYRLKuiFwFm-q6J7n_yfmpQHxODWo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
